@@ -21,5 +21,5 @@ python3 train_student.py --path-t ./save/models/wrn_40_2_vanilla/ckpt_epoch_240.
         --save_model \
         --experiments_dir 'tea-res56-stu-res20/kd/global_T/your_experiment_name' \
         --experiments_name 'fold-1' 
-        
+         
 python3 train_student.py --path-t /data/goujp/xjh/CTKD-main/save/models/cifar100/wrn_40_2_vanilla/ckpt_epoch_240.pth --distill scakd --model_s wrn_16_2 -r 0.1 -a 0.9 -b 1.0 -e 0.5 -f 0.5 --kd_T 4 --batch_size 64 --learning_rate 0.05 --save_model --experiments_dir 'tea-res56-stu-res20/' --experiments_name 'SCAKD'
